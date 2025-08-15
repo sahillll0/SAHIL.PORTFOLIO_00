@@ -1,130 +1,731 @@
-
-/* Mobile Responsive Styles */
+/* Mobile First Responsive Design */
 @media screen and (max-width: 768px) {
-    .navbar {
-        padding: 20px;
-        flex-direction: column;
-        gap: 20px;
-    }
+  /* Navigation */
+  .navbar {
+    padding: 15px;
+    flex-direction: column;
+    gap: 15px;
+  }
 
-    .sahil {
-        font-size: 18vh;
-        margin-top: -40px;
-    }
+  .center {
+    display: none; /* Hide default nav dots on mobile */
+  }
 
-    .page1-bottom {
-        flex-direction: column;
-        gap: 30px;
-        margin-top: 20px;
-    }
+  /* Main title */
+  .sahil {
+    font-size: clamp(3rem, 15vw, 6rem);
+    text-align: center;
+  }
 
-    .page2-main {
-        height: auto;
-        width: 90%;
-    }
+  /* Bottom section */
+  .page1-bottom {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
 
-    .page2-main img {
-        height: 300px;
-    }
+  /* Page 2 */
+  .page2-main {
+    padding: 20px;
+  }
 
-    .page2-main pre {
-        font-size: 24px;
-    }
+  .img-main {
+    width: 90%;
+    height: auto;
+  }
 
-    .page3-main {
-        font-size: 6vh;
-        margin-top: 60px;
-    }
+  /* Page 3 */
+  .page3-bottom {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .page3-bottom {
-        flex-direction: column;
-        gap: 20px;
-        padding: 20px;
-    }
+  .page-3-card {
+    width: 90%;
+    margin: 10px 0;
+  }
 
-    .page3-main h3 span {
-        font-size: 1.5vh;
-    }
+  /* Page 5 */
+  .page-5-main {
+    flex-direction: column;
+  }
 
-    .card {
-        width: 100%;
-        height: auto;
-        padding: 1rem;
-    }
+  .sahilimage {
+    width: 100%;
+    margin-top: 30px;
+  }
 
-    .page4-main {
-        font-size: 2rem;
-        padding-top: 150px;
-        text-align: center;
-    }
+  .imgbox5 img {
+    width: 90%;
+    margin: 0 auto;
+  }
 
-    .page-5-main h1 {
-        font-size: 2.5rem;
-    }
+  /* Page 6 */
+  .skills-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
 
-    .imgbox5 img {
-        height: 300px;
-        width: 280px;
-    }
+  /* Page 7 */
+  .contact-container {
+    width: 90%;
+    padding: 20px;
+  }
 
-    .page5-bottom {
-        font-size: 20px;
-        padding: 0 20px;
-    }
-
-    .text2 {
-        padding: 0 20px;
-    }
-
-    .btn-53 {
-        padding: 1rem 2rem;
-    }
+  form input, 
+  form textarea {
+    width: 100%;
+  }
 }
 
-/* Tablet Responsive Styles */
+/* Tablet Styles */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-    .sahil {
-        font-size: 45vh;
-    }
+  .sahil {
+    font-size: clamp(5rem, 20vw, 8rem);
+  }
 
-    .page2-main img {
-        height: 400px;
-    }
-
-    .page3-main {
-        font-size: 8vh;
-    }
-
-    .card {
-        width: 250px;
-    }
-
-    .page-5-main h1 {
-        font-size: 3rem;
-    }
-
-    .imgbox5 img {
-        height: 400px;
-        width: 320px;
-    }
+  .skills-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
-/* Landscape Mode Fix */
- @media screen and (max-height: 600px) and (orientation: landscape) {
-    .sahil {
-        font-size: 25vh;
-        margin-top: -20px;
-    }
+.mobile-menu-toggle {
+  display: none;
+}
 
-    .page1-bottom {
-        margin-top: 0;
-    }
+/* Mobile Responsive Styles for (min-width: 371px) and (max-width: 750px) */
 
-    .page2-main {
-        height: 80vh;
-    }
+@media screen and (min-width: 371px) and (max-width: 750px) {
+  /* Hide cursor on mobile */
+  #cursor {
+    display: none;
+  }
 
-    .page3-main {
-        margin-top: 40px;
-    }
-} 
+  /* Page 1 Styles - Keep existing navbar and animations intact */
+  .navbar {
+    padding: 15px 20px;
+    display: flex;
+    justify-items: space-between;
+    /* Keep existing flex properties intact */
+  }
+
+  .left h3 {
+    font-size: 18px;
+    letter-spacing: 1px;
+  }
+
+  /* Keep center navigation working - just adjust size if needed */
+  .nav-dots {
+    padding: 8px 12px;
+  }
+
+  .dot {
+    width: 6px;
+    height: 6px;
+  }
+
+  .nav-links {
+    min-width: 160px;
+    padding: 15px 20px;
+  }
+
+  .nav-links a {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+
+  .right button {
+    padding: 8px 16px;
+    font-size: 12px;
+  }
+
+  /* SAHIL title - keep animations intact, just adjust size */
+  .sahil {
+    font-size: clamp(8vh, 15vw, 12vh);
+    margin-top: -60px;
+    letter-spacing: -1px;
+    /* All existing animations will continue working */
+  }
+
+  .page1-bottom {
+    flex-direction: column;
+    gap: 15px;
+    margin-top: -30px;
+    padding: 20px;
+  }
+
+  .page1-bottom div {
+    height: 120px;
+    width: 280px;
+    padding: 15px;
+    margin: 5px 0;
+  }
+
+  .page1-bottom i {
+    font-size: 20px;
+  }
+
+  .page1-bottom h4 {
+    font-size: 13px;
+  }
+
+  .text-small {
+    font-size: 11px !important;
+  }
+
+  /* Page 2 Styles */
+  .page2-main {
+    height: 400px;
+    width: 95%;
+    padding: 20px;
+    border-radius: 12px;
+  }
+
+  .page2-main .img-main {
+    height: 380px;
+    width: auto;
+    max-width: 100%;
+  }
+
+  .page2-main pre {
+    font-size: 35px;
+    display: none; /* Hide background text on mobile for cleaner look */
+  }
+
+  /* Page 3 Styles */
+  .page3-navbar {
+    margin: 10px 15px;
+    font-size: 8px;
+  }
+
+  .page3-main {
+    margin-top: 60px;
+    padding: 0 20px;
+    text-align: center;
+  }
+
+  .page3-main h1 {
+    font-size: clamp(6vw, 8vw, 40px);
+    line-height: 1.2;
+    letter-spacing: 0.5px;
+  }
+
+  .page3-main h3 {
+    font-size: 16px;
+    margin-top: 20px;
+  }
+
+  .page3-main h3 span {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 3px 8px;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .page3-bottom {
+    padding-top: 40px;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .page-3-card {
+    height: 140px;
+    width: 320px;
+    margin: 10px 0;
+    padding: 20px;
+  }
+
+  .page-3-card > strong {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .page-3-card span {
+    font-size: 12px;
+    padding: 10px;
+    text-align: center;
+  }
+
+  /* Page 4 Styles */
+  .page4-navbar {
+    margin: 10px 15px;
+    font-size: 8px;
+  }
+
+  .page4-main {
+    padding-top: 200px;
+    padding: 0 20px;
+  }
+
+  .page4-main h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  /* Page 5 Styles */
+  .page5-navbar {
+    margin: 10px 15px;
+    font-size: 8px;
+  }
+
+  .page-5-main {
+    padding-top: 40px;
+    padding: 0 20px;
+  }
+
+  .page-5-main h1 {
+    font-size: 2.5rem;
+    line-height: 1.1;
+    text-align: center;
+  }
+
+  .sahilimage {
+    margin-top: 30px;
+    padding: 0 20px;
+  }
+
+  .imgbox5 img {
+    height: 350px;
+    width: 350px;
+    border-radius: 15px;
+    max-width: 100%;
+  }
+
+  .page5-bottom {
+    margin-top: 30px;
+    padding: 0 20px;
+  }
+
+  .page5-bottom-text1 h1 {
+    font-size: 20px;
+    line-height: 1.3;
+    text-align: center;
+  }
+
+  .text2 {
+    font-size: 14px;
+    margin-top: 20px;
+    padding: 0 20px;
+    line-height: 1.5;
+  }
+
+  .resume {
+    margin-top: 25px;
+  }
+
+  .btn-53 {
+    padding: 1rem 2rem;
+    font-size: 14px;
+  }
+
+  /* Page 6 Styles */
+  .page6-navbar {
+    margin: 10px 15px;
+    font-size: 8px;
+  }
+
+  .page6-main {
+    padding-top: 40px;
+    padding: 0 20px;
+  }
+
+  .section-title {
+    font-size: 22px;
+    margin-bottom: 30px;
+  }
+
+  .skillbox {
+    height: 140px;
+    width: 160px;
+    padding: 15px;
+    margin-right: 15px;
+  }
+
+  .skillbox img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .skillbox h2 {
+    font-size: 14px;
+  }
+
+  .skill-tool h1 {
+    font-size: 22px;
+    margin-bottom: 30px;
+  }
+
+  /* Adjust animation speed for mobile */
+  .skills-swiper {
+    animation: slideLeft 25s linear infinite;
+  }
+
+  .tools-swiper {
+    animation: slideRight 30s linear infinite;
+  }
+
+  /* Page 7 Styles */
+  .contact-wrapper {
+    padding: 15px;
+  }
+
+  .contact-container {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .contact-card {
+    padding: 1.5rem;
+    border-radius: 8px;
+  }
+
+  .contact-header h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .contact-header p {
+    font-size: 0.9rem;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .form-group label {
+    font-size: 0.85rem;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    padding: 0.75rem;
+    font-size: 0.9rem;
+  }
+
+  .full-width textarea {
+    min-height: 100px;
+  }
+
+  .submit-btn {
+    padding: 0.875rem;
+    font-size: 1rem;
+  }
+
+  /* Background Animations - keep existing animations, just adjust sizes */
+  .bg-circle:nth-child(1) {
+    width: 200px;
+    height: 200px;
+    top: 15%;
+    left: 5%;
+    /* Existing float animation continues */
+  }
+
+  .bg-circle:nth-child(2) {
+    width: 150px;
+    height: 150px;
+    top: 70%;
+    right: 5%;
+    /* Existing float animation continues */
+  }
+
+  .bg-circle:nth-child(3) {
+    width: 100px;
+    height: 100px;
+    bottom: 30%;
+    left: 20%;
+    /* Existing float animation continues */
+  }
+
+  /* Utility classes for mobile */
+  .mobile-hide {
+    display: none !important;
+  }
+
+  .mobile-center {
+    text-align: center !important;
+  }
+
+  .mobile-full-width {
+    width: 100% !important;
+  }
+
+  /* Improved touch targets */
+  button, a, .skillbox, .page-3-card {
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  /* Optimize fonts for mobile */
+  * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Prevent horizontal scroll */
+  body {
+    overflow-x: hidden;
+  }
+
+  /* Improve form usability on mobile */
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea {
+    font-size: 16px; /* Prevents zoom on iOS */
+    -webkit-appearance: none;
+    border-radius: 8px;
+  }
+}
+
+/* Additional mobile-specific styles for very small screens */
+@media screen and (min-width: 371px) and (max-width: 450px) {
+  .sahil {
+    font-size: clamp(10vh, 12vw, 10vh);
+  }
+  @media screen and (min-width: 371px) and (max-width: 750px) {
+  /* Update navbar styles */
+  .navbar {
+    padding: 15px 20px;
+    display: flex;
+    flex-direction: row !important; /* Force row direction */
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 99999;
+    /* background: rgba(0, 0, 0, 0.8); */
+    backdrop-filter: blur(5px);
+  }
+
+  /* Left side with logo */
+  .left {
+    display: flex;
+    align-items: center;
+  }
+
+  .left h3 {
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin: 0;
+  }
+
+  /* Right side with button */
+  .right {
+    display: flex;
+    align-items: center;
+  }
+
+  .right button {
+    padding: 8px 16px;
+    font-size: 12px;
+    margin: 0;
+  }
+
+  /* Hide center navigation on mobile */
+  .center {
+    display: none;
+  }
+
+  /* Adjust spacing below navbar */
+  .sahil {
+    margin-top: 100px;
+    text-align: center;
+     /* Add space for fixed navbar */
+  }
+}
+
+  .navbar{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+  }
+
+  .page1-bottom div {
+    width: 300px;
+    height: 100px;
+    padding: 8px 15px;
+  }
+  
+
+  .page2-main {
+    height: 350px;
+  }
+  .page2-main pre {
+    font-size: 30px;
+ 
+  }
+
+  .page2-main .img-main {
+    height: 330px;
+  }
+
+  .page3-main h1 {
+    font-size: clamp(5vw, 7vw, 35px);
+  }
+
+  .page3-main h3 span{
+    background-color: transparent;
+    color: white;
+    border: 0px solid transparent;
+  }
+
+  .page-3-card {
+    width: 280px;
+    height: 130px;
+    margin-top:-10px ;
+  }
+
+  .imgbox5 img {
+    height: 300px;
+    width: 300px;
+  }
+
+  .skillbox {
+    height: 120px;
+    width: 140px;
+  }
+
+  .skillbox img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .skillbox h2 {
+    font-size: 12px;
+  }
+
+  .page4-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    padding-top: 300px;
+  }
+
+  .skills-swiper {
+  display: flex;
+  animation: slideLeft 5s linear infinite;
+}
+
+.tools-swiper {
+  display: flex;
+  animation: slideRight 5s linear infinite;
+}
+footer {
+    height: auto;
+    padding: 30px 15px;
+  }
+  
+  .footer-1 h3 {
+    font-size: 18px;
+  }
+  
+  .footer-2 {
+    flex-direction: column;
+    gap: 30px;
+    margin: 30px 0;
+    text-align: center;
+  }
+
+  .follow{
+    padding-top: 10px;
+  }
+  
+  .follow h3 {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  
+  .social-icons {
+    font-size: 28px;
+    gap: 20px;
+  }
+  
+  .info h4 {
+    font-size: 14px;
+    margin: 10px 0;
+  }
+  
+  .copyright {
+    height: auto;
+    padding: 20px;
+  }
+  
+  .copyright p {
+    font-size: 14px;
+  }
+}
+
+
+/* Landscape orientation adjustments */
+@media screen and (min-width: 371px) and (max-width: 750px) and (orientation: landscape) {
+  .sahil {
+    font-size: clamp(4vh, 8vw, 8vh);
+    margin-top: -30px;
+  }
+  .navbar {
+    padding: 10px 15px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .page1-bottom {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .page1-bottom div {
+    height: 100px;
+    width: 200px;
+  }
+
+  .page2-main {
+    height: 300px;
+  }
+
+  .page2-main .img-main {
+    height: 280px;
+  }
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+  .mobile-menu-toggle {
+    display: block;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+  }
+
+  .mobile-menu-toggle span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: white;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+
+  .mobile-menu-toggle.active span:nth-child(1) {
+    transform: rotate(-45deg) translate(-6px, 6px);
+  }
+
+  .mobile-menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .mobile-menu-toggle.active span:nth-child(3) {
+    transform: rotate(45deg) translate(-6px, -6px);
+  }
+}
+
