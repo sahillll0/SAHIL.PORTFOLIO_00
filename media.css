@@ -1,0 +1,130 @@
+
+/* Mobile Responsive Styles */
+@media screen and (max-width: 768px) {
+    .navbar {
+        padding: 20px;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .sahil {
+        font-size: 18vh;
+        margin-top: -40px;
+    }
+
+    .page1-bottom {
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 20px;
+    }
+
+    .page2-main {
+        height: auto;
+        width: 90%;
+    }
+
+    .page2-main img {
+        height: 300px;
+    }
+
+    .page2-main pre {
+        font-size: 24px;
+    }
+
+    .page3-main {
+        font-size: 6vh;
+        margin-top: 60px;
+    }
+
+    .page3-bottom {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .page3-main h3 span {
+        font-size: 1.5vh;
+    }
+
+    .card {
+        width: 100%;
+        height: auto;
+        padding: 1rem;
+    }
+
+    .page4-main {
+        font-size: 2rem;
+        padding-top: 150px;
+        text-align: center;
+    }
+
+    .page-5-main h1 {
+        font-size: 2.5rem;
+    }
+
+    .imgbox5 img {
+        height: 300px;
+        width: 280px;
+    }
+
+    .page5-bottom {
+        font-size: 20px;
+        padding: 0 20px;
+    }
+
+    .text2 {
+        padding: 0 20px;
+    }
+
+    .btn-53 {
+        padding: 1rem 2rem;
+    }
+}
+
+/* Tablet Responsive Styles */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .sahil {
+        font-size: 45vh;
+    }
+
+    .page2-main img {
+        height: 400px;
+    }
+
+    .page3-main {
+        font-size: 8vh;
+    }
+
+    .card {
+        width: 250px;
+    }
+
+    .page-5-main h1 {
+        font-size: 3rem;
+    }
+
+    .imgbox5 img {
+        height: 400px;
+        width: 320px;
+    }
+}
+
+/* Landscape Mode Fix */
+ @media screen and (max-height: 600px) and (orientation: landscape) {
+    .sahil {
+        font-size: 25vh;
+        margin-top: -20px;
+    }
+
+    .page1-bottom {
+        margin-top: 0;
+    }
+
+    .page2-main {
+        height: 80vh;
+    }
+
+    .page3-main {
+        margin-top: 40px;
+    }
+} 
